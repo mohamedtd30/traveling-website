@@ -1,0 +1,92 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.form-name
+{
+    padding: 210px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 7px 7px 5px gray;
+}
+.form-name h1{
+    font-size: 45px;
+}
+.quote{ 
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    /* background-color: #026B6A; */
+    display: inline-block;
+    padding: 3px;
+}
+.motivation{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #48210B;
+}
+.motivation2{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    /* font-family:; */
+}
+.stepOne{
+    position: relative;
+    left: 350px;
+    margin-top: 20px;
+    border: 2px solid #48210B;
+    display: inline-block;
+    font-size: 25px;
+    padding: 50px 70px;
+    border-radius: 20px;
+}
+.stepTwo{
+    position: relative;
+    left: 350px;
+    border: 2px solid #48210B;
+    display: inline;
+    font-size: 25px;
+    padding: 50px 115px;
+    border-radius: 20px;
+}
+.hint{
+    margin-top: 50px;
+}
+
+
+.pay{
+
+    padding: 75px;
+    font-size: 20px;
+    margin: auto;
+    color: #843a10;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+span{
+    text-align: center;
+    font-size:100px ;
+    padding: 20px;
+    border-radius: 100%;
+    border: 10px  #50c5b7 solid;
+    color: #50c5b7 ;
+}
+.pay1{
+    color:  #50c5b7;
+    position: relative;
+    top: 20px;
+    font-size:65px ;
+}
+.pay2{
+    color:  #50c5b7;
+    position: relative;
+    top: 20px;
+    font-size:50px ;
+    font-weight: bold;
+}

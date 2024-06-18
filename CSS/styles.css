@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.google.com/specimen/Inter?query=inter');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aboutus-body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.content-about-us-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-top: 70px;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team div{
+    width: 160px;
+    height: 160px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px 15px 15px 15px rgba(128, 128, 128, 0.195);
+    border-radius: 100%;
+    text-align: center;
+    transition: transform 1s;
+}
+
+
+.first:hover{
+    background-color: rgba(15, 181, 184, 0.639);
+    transform: scale(1.2);
+}
+.second:hover{
+    background-color: rgba(255, 99, 71, 0.639);
+    transform: scale(1.2);
+}
+.third:hover{
+
+    background-color: rgba(71, 61, 139, 0.636);
+    transform: scale(1.2);
+}
+.fourth:hover{
+    background-color:rgba(5, 85, 86, 0.636);
+    transform: scale(1.2);
+}
+.fifth:hover{
+    background-color:rgba(13, 129, 9, 0.639);
+    transform: scale(1.2);
+}
+
+.about-Body{
+    display: flex;
+    width: 100%;
+}
+
+.aside{
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    padding: 20px;
+    top: 65px;
+    right: 0;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    color: white;
+}
+
+.aside a{
+    display: block;
+    margin: 35px 5px;
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+}
+.aside a:hover{
+    display: block;
+    margin: 35px 5px;
+    padding: 8px;
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.heading{
+    width :100%;
+    height: 550px;
+    background-image: url('../media/pexels-dominika-roseclay-1252500.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.AboutUs{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border-top: 3px solid #f1f1f1;
+    border-bottom: 3px solid #f1f1f1;
+    position: relative;
+    top: 250px;
+    font-size: 80px;
+}
+
+.section-body{
+    margin-top: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-text-body{
+    max-width: 60%;
+    font-size: larger;
+    background-color: antiquewhite;
+    position: relative;
+    padding: 60px 30px 60px 250px;
+    border-radius: 10px;
+}
+
+.header-section{
+    font-weight: bold;
+    padding: 13px;
+} 
+.image{
+    border-radius: 50%;
+    position: relative;
+    border: #f9f9f9 solid 5px;
+    left: 230px;
+    z-index: 1;
+}
+
+.image::before{
+    left: 350px;
+}
+
+.about-Body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-txt{
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tours-kind{
+    display: block;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.aside-header{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: 2px solid black;
+}
+
+.sites-container{
+    width: 900px;
+    margin: 80px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sites{
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease, transform 1s ease;
+    width: 370px;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    font-family: Inter;
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.sites:hover{
+    transform: scale(1.04); /* You can adjust the scale value for the desired zoom level */
+}
+
+.sites-img img{
+    width: 370px;
+    height: 290px;
+    box-shadow: 15px -15px 15px 15px rgba(128, 128, 128, 0.195);
+}
+
+.hidden-sites{
+    font-family: Inter;
+    display: none;
+    width: 370px;
+    border: 2px solid gray;
+    border-top: transparent;
+    margin-top: -14px;
+    box-shadow: 10px 15px 15px 15px rgba(128, 128, 128, 0.195);
+}
+.visibleDiv{
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.show-more-less{
+    width: fit-content;
+    height: fit-content;
+    font-weight: bold;
+    padding: 7px;
+    background-color: silver;
+    cursor: pointer;
+    transition: transform 1s;
+    color: black;
+    text-align: center;
+    margin: 10px auto 0;
+    border-radius: 20px;
+
+}
+
+.show-more-less:hover{
+    transform: scale(1.1);
+}
+
+.des-icons{
+    display: flex;
+    width: 370px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    margin-bottom: 15px;
+}
+.des-duration{
+    color: rgba(13, 168, 152, 0.916);
+    margin-top: 0px;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    width: 184px;
+}
+
+.des-duration::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 51px;
+    background-color: gray;
+    bottom: -17px;
+    left: -3px;
+}
+
+.des-price{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 20px !important;
+    color:black;
+    font-weight: bold;
+    padding: 15px;
+    width: 184px;
+}
+.des-text{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+.des-booking{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    color: black;
+    background-color:rgba(13, 168, 152, 0.916) ;
+    margin-bottom: 20px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+    transition: transform 1s;
+}
+.des-booking:hover{
+    transform: scale(1.1);
+}
+
+.show-less{
+    cursor: pointer;
+    font-size: larger;
+}
+.services{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.services div{
+    width: 250px;
+    height: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px 15px 15px 15px rgba(128, 128, 128, 0.195);
+}
+.services div:hover{
+    background-color: #0fb5b8a2;
+}
+.mar{
+    margin-bottom: 15px;
+}
+.mar:last-child{
+    margin: 0;
+}
+.stars{
+    color: gold !important;
+    font-size: 16px;
+}
+.laststar{
+    color: silver;
+}
+
+.del-price{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 70px;
+    text-decoration: line-through;
+}
+
+nav a.active{
+    color: #86b817 !important;
+}
